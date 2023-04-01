@@ -1,0 +1,27 @@
+For the new Relational database I propose the model design below
+They will be Customers, coaching services, Book sets, Orders, Order coaching Services and order book sets tables.
+
+1 Customers
+   customer_id (Primary Key)
+   name
+   cell_phone
+   email
+   address
+2 Coaching_Services
+   coaching_service_id (Primary Key)
+   name
+3 Book_Sets
+   book_set_id (Primary Key)
+   name
+4 Orders
+   order_id (Primary Key)
+   customer_id (Foreign Key)
+   order_total
+   order_date
+   discount_code
+5 Order_Coaching_Services
+   order_id (Primary Key, Foreign Key)
+   coaching_service_id (Primary Key, Foreign Key)
+6 Order_Book_Sets
+   order_id (Primary Key, Foreign Key)
+   book_set_id (Primary Key, Foreign Key)
